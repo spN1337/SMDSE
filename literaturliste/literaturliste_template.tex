@@ -1,0 +1,73 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{bibgerm}
+\usepackage{hyperref}
+
+%\usepackage{etoolbox}
+%\patchcmd{\thebibliography}{\chapter*}{\section*}{}{}
+
+% No indent @ line start
+\parindent 0pt
+
+% The bibstyle
+% gerplain is for only numbers in alphabetic order
+% geralpha is for name+year in alphabetic order
+\bibliographystyle{gerplain}
+
+% Change the text from the list of listings
+\addto\captionsngerman{\renewcommand{\bibname}{}}
+
+% A text with quotation marks
+% @par1: The text you want to quote
+% »text«
+\newcommand*{\QuoteM}[1]{\frqq #1\flqq}
+
+\begin{document}
+
+%TODO Filename: Vortrag_Agile_Vorgehensmodelle.pdf
+\section*{Literaturliste}
+Dies ist die Literaturliste für den Vortrag zum Thema \QuoteM{Agile 
+Vorgehensmodelle} am 14.04.2016 im Fach \QuoteM{Spezielle Gebiete zum Software 
+Engineering}. Die Ebooks sind via VPN oder im Netzwerk der FH Bielefeld verfügbar.
+
+\subsection*{Testgetriebene Entwicklung}
+\subsubsection*{Pflicht}
+Kapitel 5: S. 67, S. 70--72: \cite{TestingPython}
+\subsubsection*{Extra}
+Kapitel 5: S. 74--83: \cite{TestingPython}
+
+\subsection*{Kanban}
+
+\subsubsection*{Pflicht}
+Für eher audiovisuelle Lerner (über VPN auch ohne Account): \cite{KanbanV2B}\\
+Besonders wichtig sind folgende Videos:
+
+\begin{itemize}
+	\item \QuoteM{Was ist Kanban?}
+	\item \QuoteM{Überblick über den Kanban-Prozess}
+	\item \QuoteM{Kanban in der IT}
+	\item \QuoteM{Vorteile von Kanban}
+	\item \QuoteM{Theorie hinter Kanban}
+\end{itemize}
+
+Kapitel 3: S. 17--22 \cite{KanbaninderIT}
+\subsubsection*{Extra}
+Kapitel 3: S. 14--17 \cite{KanbaninderIT}
+
+\subsection*{Scrum}
+\subsubsection*{Pflicht}
+Der gültige Leitfaden für Scrum, von den Entwicklern. \\
+Enthält die Basics, in unterschiedlichen Sprachen: \cite{ScrumGuide}
+\subsubsection*{Extra}
+Besonders Kapitel 2.2: ab S. 10: \cite{AgileITProjekte} \\
+Besonders Kapitel 5: ab S. 61: \cite{AgileProzesse} \\
+Besonders Kapitel 4: ab S. 81: \cite{ScrumSystem} \\
+\nocite{ScrumUnternehmenspraxis}
+Englischsprachig, setzt Grundwissen voraus: \cite{ScrumCulture}\\
+Für eher audiovisuelle Lerner (über VPN auch ohne Account): \cite{VideoToBrain} 
+\bibliography{Literature}
+\end{document}
